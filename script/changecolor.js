@@ -9,3 +9,11 @@ function shadow(docid, want){
         document.getElementById(docid).classList.add('noshadow')
     }
 }
+function inshadow(docid, want){
+    if(want == 'yes'){
+        document.getElementById(docid).classList.add('inshadow')
+    }
+    else{
+        document.getElementById(docid).classList.remove('inshadow')
+    }
+}
