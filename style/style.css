@@ -19,6 +19,9 @@
     top: 1em;
     padding-left: 0%;
     padding-right: 0%;
+    background-color:#009bff;
+    width: 99%;
+    margin: auto;
 }
 .alignmiddle{
     text-align: center;
@@ -38,11 +41,6 @@
 }
 .oldshadow{
     box-shadow: 0.5em 0.5em 1.5em #0a0a0f, -0.5em -0.5em 1.5em #32323c;
-}
-.topfollow{
-    background-color:#009bff;
-    width: 99%;
-    margin: auto;
 }
 .fitleft{
     width: fit-content;
