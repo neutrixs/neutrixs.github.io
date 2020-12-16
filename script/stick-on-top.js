@@ -8,9 +8,6 @@ document.getElementById('sticky').innerHTML =
     <p><a href="https://github.com/neutrixs/neutrixs.github.io" class="white" target="_blank">Source code</a></p>
 </div>
 <div class="divstyle noshadow fitleft marginr">
-    <p><a href="" class="white">Twitter</a></p>
-</div>
-<div class="divstyle noshadow fitleft marginr">
     <p><a href="./cat_pictures.html" class="white">Cat pictures</a></p>
 </div>
 <div class="divstyle noshadow fitleft marginr">
