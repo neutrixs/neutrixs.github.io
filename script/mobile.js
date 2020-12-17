@@ -8,8 +8,8 @@ function smallwidth(){
     marginr = document.getElementsByClassName('marginr');
     for(var i = 0;i<marginr.length;i++){
         marginr[i].style.marginRight = '0';
-        marginr[i].style.paddingLeft = '0.2em';
-        marginr[i].style.paddingRight = '0.2em';
+        marginr[i].style.paddingLeft = '0.5em';
+        marginr[i].style.paddingRight = '0.5em';
     }
         
     height0 = document.getElementsByName('border');
@@ -20,7 +20,7 @@ function smallwidth(){
     padding0 = document.getElementsByClassName('divstyle');
     for(var i = 5;i<padding0.length;i++){
         padding0[i].style.boxShadow = 'none';
-        padding0[i].style.borderRadius = '0.5em';
+        padding0[i].style.borderRadius = '0em';
     }
 
 }
