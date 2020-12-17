@@ -41,6 +41,9 @@
     transition: 300ms;
     width: 75%;
 }
+.imgfull{
+    width:100%;
+}
 .image:hover{
     width: 100%;
 }
