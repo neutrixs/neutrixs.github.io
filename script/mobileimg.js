@@ -1,4 +1,4 @@
-if(document.documentElement.clientWidth < 1301) smallwidthimg();
+if(document.documentElement.clientWidth < document.documentElement.clientHeight) smallwidthimg();
 
 function smallwidthimg(){
     image = document.getElementsByClassName('image');

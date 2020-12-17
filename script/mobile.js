@@ -1,4 +1,4 @@
-if(document.documentElement.clientWidth < 1301) smallwidth();
+if(document.documentElement.clientWidth < document.documentElement.clientHeight) smallwidth();
 
 function smallwidth(){
     
