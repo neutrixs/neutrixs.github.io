@@ -5,14 +5,15 @@ window.onresize = function(){
     if(width < 1301){
         smallwidth();
         //only apply to pages with img
-        if(document.getElementsByClassName('image').toString() !== '[object HTMLCollection]'){
+        if(document.getElementsByClassName('image')[0] !== undefined){
+            console.log('test')
             smallwidthimg();
         }
     }
     else {
         bigwidth();
         //only apply to pages with img
-        if(document.getElementsByClassName('image').toString() !== '[object HTMLCollection]'){
+        if(document.getElementsByClassName('image')[0] !== undefined){
             bigwidthimg();
         }
     }
