@@ -27,7 +27,7 @@ function smallwidth(){
 
 function bigwidth(){
     document.getElementById('holder').style.width = '75%';
-    document.getElementById('sticky').style.width = '99%';
+    document.getElementById('sticky').style.width = '97%';
 
     marginr = document.getElementsByClassName('marginr');
     for(var i = 0;i<marginr.length;i++){
