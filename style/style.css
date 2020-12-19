@@ -23,6 +23,11 @@
     width: 97%;
     margin: auto;
 }
+.topsquare{
+    top: 0em;
+    border-radius: 0em;
+    width: 100%;
+}
 .alignmiddle{
     text-align: center;
 }
@@ -75,6 +80,13 @@
 }
 .marginr{
     margin-right: 1em;
+}
+.border{
+    height: 2em;
+    background-color: transparent;
+}
+.noborder{
+    height: 0em;
 }
 
 body{

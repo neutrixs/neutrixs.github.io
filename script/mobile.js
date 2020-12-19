@@ -2,8 +2,8 @@ if(document.documentElement.clientWidth < document.documentElement.clientHeight)
 
 function smallwidth(){
     
-    document.getElementById('holder').style.width = 'unset';
-    document.getElementById('sticky').style.width = 'unset';
+    document.getElementById('holder').style.width = '100%';
+    document.getElementById('sticky').classList.add('topsquare');
 
     marginr = document.getElementsByClassName('marginr');
     for(var i = 0;i<marginr.length;i++){
@@ -12,9 +12,9 @@ function smallwidth(){
         marginr[i].style.paddingRight = '0.5em';
     }
         
-    height0 = document.getElementsByName('border');
+    height0 = document.getElementsByClassName('border');
     for(var i = 0; i<height0.length;i++){
-        height0[i].style.height = '0%';
+        height0[i].classList.add('noborder');
     }
     
     padding0 = document.getElementsByClassName('divstyle');
@@ -27,7 +27,7 @@ function smallwidth(){
 
 function bigwidth(){
     document.getElementById('holder').style.width = '75%';
-    document.getElementById('sticky').style.width = '97%';
+    document.getElementById('sticky').classList.remove('topsquare');
 
     marginr = document.getElementsByClassName('marginr');
     for(var i = 0;i<marginr.length;i++){
@@ -36,9 +36,9 @@ function bigwidth(){
         marginr[i].style.paddingRight = '2em';
     }
 
-    height0 = document.getElementsByName('border');
+    height0 = document.getElementsByClassName('border');
     for(var i = 0; i<height0.length;i++){
-        height0[i].style.height = '2em';
+        height0[i].classList.remove('noborder');
     }
 
     padding0 = document.getElementsByClassName('divstyle');
