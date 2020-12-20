@@ -2,7 +2,7 @@ if(document.documentElement.clientWidth < document.documentElement.clientHeight)
 
 function smallwidth(){
     
-    document.getElementById('holder').style.width = '100%';
+    document.getElementById('holder').classList.add('holderfull');
     document.getElementById('sticky').classList.add('topsquare');
 
     marginr = document.getElementsByClassName('marginr');
@@ -26,7 +26,7 @@ function smallwidth(){
 }
 
 function bigwidth(){
-    document.getElementById('holder').style.width = '75%';
+    document.getElementById('holder').classList.remove('holderfull');
     document.getElementById('sticky').classList.remove('topsquare');
 
     marginr = document.getElementsByClassName('marginr');

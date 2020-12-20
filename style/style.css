@@ -1,3 +1,4 @@
+
 .divstyle{
     margin: auto;
     border-radius: 1em;
@@ -84,9 +85,19 @@
 .border{
     height: 2em;
     background-color: transparent;
+    transition: 300ms;
 }
 .noborder{
     height: 0em;
+}
+.holder{
+    background-color: transparent;
+    width: 75%;
+    margin: auto;
+    transition: 300ms;
+}
+.holderfull{
+    width: 100%;
 }
 
 body{
