@@ -6,7 +6,7 @@
     padding-top: 0.1em;
     padding-bottom: 0.1em;
     box-shadow: 0.5em 0.5em 1.5em #0a0a0f, -0.5em -0.5em 1.5em #323232;
-    transition: 300ms;
+    transition:ease-out 300ms;
 }
 .textstyle{
     font-size: 1.3em;
@@ -44,7 +44,7 @@
     border-radius: 1em;
     display: block;
     box-shadow: 0.5em 0.5em 1.5em #000000, -0.5em -0.5em 1.5em #323232;
-    transition: 300ms;
+    transition:ease-out 300ms;
     width: 75%;
 }
 .imgfull{
@@ -85,7 +85,7 @@
 .border{
     height: 2em;
     background-color: transparent;
-    transition: 300ms;
+    transition:ease-out 300ms;
 }
 .noborder{
     height: 0em;
@@ -94,7 +94,7 @@
     background-color: transparent;
     width: 75%;
     margin: auto;
-    transition: 300ms;
+    transition:ease-out 300ms;
 }
 .holderfull{
     width: 100%;
