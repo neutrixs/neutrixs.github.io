@@ -7,7 +7,6 @@ window.onresize = function(){
         smallwidth();
         //only apply to pages with img
         if(document.getElementsByClassName('image')[0] !== undefined){
-            console.log('test')
             smallwidthimg();
         }
     }
