@@ -14,6 +14,10 @@
 .titlestyle{
     font-size: 2em;
 }
+.title_sosmed{
+    font-size: 2em;
+    text-align: center;
+}
 .sticky{
     position: -webkit-sticky;
     position: sticky;
@@ -46,6 +50,11 @@
     box-shadow: 0.5em 0.5em 1.5em #000000, -0.5em -0.5em 1.5em #323232;
     transition:ease-out 300ms;
     width: 75%;
+}
+.sosmed_image{
+    width: 300px;
+    height: 300px;
+
 }
 .imgfull{
     width:100%;
@@ -98,12 +107,6 @@
 }
 .holderfull{
     width: 100%;
-}
-.padbot{
-    padding-bottom: 2em;
-}
-.padtop{
-    padding-top: 2em;
 }
 
 body{
