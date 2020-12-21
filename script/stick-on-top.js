@@ -12,4 +12,7 @@ document.getElementById('sticky').innerHTML =
 </div>
 <div id="menu" class="divstyle noshadow fitleft marginr">
     <p><a href="https://forum.ftrix-web.xyz" class="white">Forum</a></p>
+</div>
+<div id="menu" class="divstyle noshadow fitleft marginr">
+    <p><a href="./sosmed.html" class="white">Social Media</a></p>
 </div>`;
