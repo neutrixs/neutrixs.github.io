@@ -114,6 +114,13 @@
 .padbot{
     padding-bottom: 2em;
 }
+.nodrag{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 
 body{
     background-repeat: no-repeat;
