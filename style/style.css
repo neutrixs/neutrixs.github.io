@@ -108,6 +108,12 @@
 .holderfull{
     width: 100%;
 }
+.padtop{
+    padding-top: 2em;
+}
+.padbot{
+    padding-bottom: 2em;
+}
 
 body{
     background-repeat: no-repeat;
