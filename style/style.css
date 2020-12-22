@@ -114,6 +114,12 @@
 .padbot{
     padding-bottom: 2em;
 }
+.padtopone{
+    padding-top: 1em;
+}
+.padbotone{
+    padding-bottom: 1em;
+}
 .nodrag{
     user-select: none;
     -moz-user-select: none;
