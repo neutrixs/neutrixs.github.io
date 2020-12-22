@@ -27,6 +27,7 @@
     background-color:#009bff;
     width: 97%;
     margin: auto;
+    z-index: 69;
 }
 .topsquare{
     top: 0em;
