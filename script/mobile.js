@@ -18,10 +18,11 @@ function smallwidth(){
     }
     
     padding0 = document.getElementsByClassName('divstyle');
-    //change i to amount of menu bar option + 1
-    for(var i = 6;i<padding0.length;i++){
-        padding0[i].style.boxShadow = 'none';
-        padding0[i].style.borderRadius = '0em';
+    for(var i = 0;i<padding0.length;i++){
+        if(padding0[i].getAttribute('name') !== 'menu'){
+            padding0[i].style.boxShadow = 'none';
+            padding0[i].style.borderRadius = '0em';
+        }
     }
 
 }
@@ -43,9 +44,10 @@ function bigwidth(){
     }
 
     padding0 = document.getElementsByClassName('divstyle');
-    //change i to the amount of menu bar option + 1
-    for(var i = 6;i<padding0.length;i++){
-        padding0[i].style.boxShadow = '0.5em 0.5em 1.5em #000000, -0.5em -0.5em 1.5em #323232';
-        padding0[i].style.borderRadius = '1em';
+    for(var i = 0;i<padding0.length;i++){
+        if(padding0[i].getAttribute('name') !== 'menu'){
+            padding0[i].style.boxShadow = '0.5em 0.5em 1.5em #000000, -0.5em -0.5em 1.5em #323232';
+            padding0[i].style.borderRadius = '1em';
+        }
     }
 }
