@@ -1,9 +1,15 @@
 .sosmedbutton{
     background-color: #00cc6d; 
-    padding-top: 1em; 
-    padding-bottom: 1em; 
+    padding: 1em;
     margin-right: 1em; 
     margin-bottom: 1em;
+    transform: scale(1);
+}
+.sosmedbutton:hover{
+    transform: scale(1.1);
+}
+.sosmedbutton:active{
+    transform: scale(1);
 }
 .sosmedlogo{
     width: 2em; 
