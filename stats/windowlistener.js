@@ -18,9 +18,6 @@ function mobile(){
     for(var i=0;i<navbar.length;i++){
         navbar[i].classList.add('navbarmenulistmobile')
     }
-
-    //page specific
-    document.getElementById('sosmedholder').style.textAlign = 'left';
 }
 function desktop(){
     document.getElementById('navbar').classList.remove('navbarmobile')
@@ -42,9 +39,6 @@ function desktop(){
     for(var i=0;i<navbar.length;i++){
         navbar[i].classList.remove('navbarmenulistmobile')
     }
-
-    //page specific
-    document.getElementById('sosmedholder').style.textAlign = 'center';
 }
 
 
