@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>My Page</title>
         <link rel="shortcut icon" href="images/favicon-ftrix.png" type="image/png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style/style.css">
-        <title>Testing page</title>
     </head>
-    <body id="webbody" style="background-image: url(images/background.jpg);">
+    <body style="background-image: url(./images/background.jpg);">
 
-        <!--menu bar-->
-        <div name="menu" id="sticky" class="divstyle sticky"></div>
-        <script src="script/stick-on-top.js"></script>
+        <div name="navbar" class="navbar" id="navbar"></div>
+        <script src="./script/navbar.js"></script>
 
-        <div style="background-color: transparent;height: 2em;"></div>
+        <div class="border"></div>
         <div id="holder" class="holder">
-            <div style="background-color: #009bff;" class="divstyle">
-                <p style="font-size: 3em;text-align: center;">Welcome to this page!</p>
+            <div style="background-color: #2b87ff;">
+                <p class="title">Hello, welcome to my page</p>
+                <p class="text">I love learning about UI, UX. <br>I'm also learning Javascript and python</p>
             </div>
             <div class="border"></div>
-            <div style="background-color: #ff9b00;" class="divstyle">
-                <p class="titlestyle">Section title</p>
-                <p class="textstyle">Your<br>Description<br>Right here!</p>
+            <div style="background-color: #00b4ab;">
+                <p class="text">This page's UI is as best as i could do
+                    <br><br> combination of 2D and 3D UI i guess
+                </p>
             </div>
             <div class="border"></div>
-            <div style="background-color: #009b9b;" class="divstyle padbot">
-                <p class="titlestyle">Another title</p>
-                <p class="textstyle">Some<br>fun<br>description<br>to put!</p>
-                <p class="textstyle">You can also put image here</p>
-                <img class="image" src="images/example.png"></img>
+            <div style="background-color: #ff5435;">
+                <p class="title">About Me</p>
+                <p class="text">I'm more active on Twitter than anywhere else</p>
+                <div id="sosmedholder" class="noshadow" style="text-align: center;padding: 0; padding-bottom: 1em;">
+                    <a class="sosmedbutton" href="https://instagram.com/neutrixs" target="_blank">
+                        <img class="sosmedlogo" src="./logos/ig.png">
+                        <span>Instagram</span>
+                    </a>
+                    <a class="sosmedbutton" href="https://facebook.com/neutrixs" target="_blank">
+                        <img class="sosmedlogo" src="./logos/fb.png">
+                        <span>Facebook</span>
+                    </a>
+                    <a class="sosmedbutton" href="https://twitter.com/neutrixs" target="_blank">
+                        <img class="sosmedlogo" src="./logos/twt.png">
+                        <span>Twitter</span>
+                    </a>
+                    <a class="sosmedbutton" href="https://steamcommunity.com/id/mcgneutrix" target="_blank">
+                        <img class="sosmedlogo" src="./logos/steam.png">
+                        <span>Steam Profile</span>
+                    </a>
+                </div>
             </div>
-            <div class="border"></div>
-            <div style="background-color: #3b7ad9;" class="divstyle padbot">
-                <p class="titlestyle">Some Game stats right here</p>
-                <iframe src="https://steamdb.info/embed/?appid=227300" height="389" style="border:0;overflow:hidden;width:100%;border-radius: 1em;" class="shadow"></iframe>
-                <div style="background-color: transparent; height: 2em;"></div>
-                <iframe src="https://steamdb.info/embed/?appid=255710" height="389" style="border:0;overflow:hidden;width:100%;border-radius: 1em;" class="shadow"></iframe>
-            </div>
-            <div style="background-color: transparent;height: 20em;"></div>
         </div>
-        <script src="script/mobile.js"></script>
-        <script src="script/mobileimg.js"></script>
-        <script src="script/windowlistener.js"></script>
+        <script src="./script/windowlistener.js"></script>
     </body>
 </html>

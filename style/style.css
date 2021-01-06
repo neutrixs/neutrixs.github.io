@@ -1,5 +1,12 @@
-
-.divstyle{
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    margin: 0;
+}
+div{
     margin: auto;
     border-radius: 1em;
     padding: 2em;
@@ -8,17 +15,12 @@
     box-shadow: 0.5em 0.5em 1.5em #0a0a0f, -0.5em -0.5em 1.5em #323232;
     transition:ease-out 300ms;
 }
-.textstyle{
-    font-size: 1.3em;
+a{
+    text-decoration: none;
 }
-.titlestyle{
-    font-size: 2em;
-}
-.title_sosmed{
-    font-size: 2em;
-    text-align: center;
-}
-.sticky{
+
+
+.navbar{
     position: -webkit-sticky;
     position: sticky;
     top: 1em;
@@ -29,99 +31,61 @@
     margin: auto;
     z-index: 69;
 }
-.topsquare{
+.navbarmobile{
+    width: 100%;
     top: 0em;
-    border-radius: 0em;
-    width: 100%;
+    border-radius: 0;
 }
-.alignmiddle{
-    text-align: center;
-}
-.white{
-    color: white;
-    text-decoration: none;
-}
-.black{
-    color:black;
-    text-decoration: none;
-}
-.image{
-    border-radius: 1em;
-    display: block;
-    box-shadow: 0.5em 0.5em 1.5em #000000, -0.5em -0.5em 1.5em #323232;
-    transition:ease-out 300ms;
-    width: 75%;
-}
-.sosmed_image{
-    width: 300px;
-    height: 300px;
-
-}
-.imgfull{
-    width:100%;
-}
-.image:hover{
-    width: 100%;
-}
-.oldshadow{
-    box-shadow: 0.5em 0.5em 1.5em #0a0a0f, -0.5em -0.5em 1.5em #32323c;
-}
-.fitleft{
+.navbarmenulist{
     width: fit-content;
-    margin-left: 0%;
-    display:inline-block;
-}
-.noshadow{
+    display: inline-block;
     background-color: transparent;
     box-shadow: none;
     border: none;
+    border-radius: 1em;
+    margin-right: 1em;
+    color: white;
+    padding: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    transition: ease-out 150ms;
 }
-.noshadow:hover{
+.navbarmenulist:hover{
     background-color: #00cc6d;
     box-shadow: 0.5em 0.5em 1.5em #000000, -0.5em -0.5em 1.5em #323232;
 }
-.noshadow:active{
+.navbarmenulist:active{
     box-shadow: inset 0.1em 0.1em 0.3em #000000, inset -0.1em -0.1em 0.3em #00ff8a;
 }
-.shadow{
-    box-shadow: 0.5em 0.5em 1.5em #000000, -0.5em -0.5em 1.5em #323232;
-}
-.inshadow{
-    box-shadow: inset 0.1em 0.1em 0.3em #000000, inset -0.1em -0.1em 0.3em #00ff8a;
-}
-.marginr{
+
+.sosmedbutton{
+    border-radius: 1em;
+    padding: 1em;
     margin-right: 1em;
+    margin-bottom: 1em;
+    transform: scale(1);
+    width: fit-content;
+    margin-left: 0%;
+    display:inline-block;
+    color: white;
+    box-shadow: none;
+    background-color: #00cc6d;
+    transition: ease-out 150ms;
 }
-.border{
-    height: 2em;
-    background-color: transparent;
-    transition:ease-out 300ms;
+.sosmedbutton:hover{
+    box-shadow: 0.5em 0.5em 1.5em #000000, -0.5em -0.5em 1.5em #323232;
+    transform: scale(1.1);
 }
-.noborder{
-    height: 0em;
+.sosmedbutton:active{
+    box-shadow: inset 0.1em 0.1em 0.3em #000000, inset -0.1em -0.1em 0.3em #00ff8a;
+    transform: scale(1);
 }
-.holder{
-    background-color: transparent;
-    width: 75%;
-    margin: auto;
-    transition:ease-out 300ms;
-}
-.holderfull{
-    width: 100%;
-}
-.padtop{
-    padding-top: 2em;
-}
-.padbot{
-    padding-bottom: 2em;
-}
-.padtopone{
-    padding-top: 1em;
-}
-.padbotone{
-    padding-bottom: 1em;
-}
-.nodrag{
+
+.sosmedlogo{
+    width: 2em; 
+    display: inline-block;
+    margin-right: 1em; 
+    vertical-align: middle;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -129,33 +93,57 @@
     -ms-user-select: none;
 }
 
-body{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+
+.holder{
+    background-color: transparent;
+    width: 75%;
+    margin: auto;
+    transition:ease-out 300ms;
+    box-shadow: none;
+    padding: 0;
+}
+.holdermobile{
+    width: 100%;
+}
+
+.border{
+    background-color: transparent;
+    height: 2em;
+    box-shadow: none;
+    transition: ease-out 300ms;
+    padding: 0;
+}
+.bordermobile{
+    height: 0px;
+}
+.bordernochange{
+    background-color: transparent;
+    height: 2em;
+    box-shadow: none;
+}
+
+
+.shadow{
+    box-shadow: 0.5em 0.5em 1.5em #0a0a0f, -0.5em -0.5em 1.5em #323232;
+}
+.noshadow{
+    box-shadow: none;
+}
+.white{
     color: white;
 }
-
-#side ol,ul{
-    list-style: none;
-}
-
-#side li{
-    display: inline;
-    padding-right: 2em;
-}
-
-#white a{
-    color:white;
-    text-decoration: none;
-}
-
-a{
+.black{
     color: black;
-    text-decoration: none;
+}
+.title{
+    font-size: 2em;
+}
+.text{
+    font-size: 1.3em;
 }
 
-body{
-    margin:0;
+
+.divmobile{
+    border-radius: 0;
+    box-shadow: none;
 }

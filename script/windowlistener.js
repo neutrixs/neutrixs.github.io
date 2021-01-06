@@ -1,26 +1,54 @@
+function mobile(){
+    document.getElementById('navbar').classList.add('navbarmobile')
+    document.getElementById('holder').classList.add('holdermobile')
+
+    border = document.getElementsByClassName('border');
+    for(var i=0;i<border.length;i++){
+        border[i].classList.add('bordermobile')
+    }
+
+    div = document.getElementsByTagName('div');
+    for(var i=0;i<div.length;i++){
+        if(!div[i].classList['value'].includes('shadow') && !div[i].classList['value'].includes('navbar')){
+            div[i].classList.add('divmobile')
+        }
+    }
+
+    //sosmed part(remove on other pages)
+    document.getElementById('sosmedholder').style.textAlign = 'left';
+}
+function desktop(){
+    document.getElementById('navbar').classList.remove('navbarmobile')
+    document.getElementById('holder').classList.remove('holdermobile')
+
+    border = document.getElementsByClassName('border');
+    for(var i=0;i<border.length;i++){
+        border[i].classList.remove('bordermobile')
+    }
+
+    div = document.getElementsByTagName('div');
+    for(var i=0;i<div.length;i++){
+        if(!div[i].classList['value'].includes('shadow') && !div[i].classList['value'].includes('navbar')){
+            div[i].classList.remove('divmobile')
+        }
+    }
+
+    //sosmed part(remove on other pages)
+    document.getElementById('sosmedholder').style.textAlign = 'center';
+}
+
+
+if(document.documentElement.clientHeight>document.documentElement.clientWidth) mobile();
+
 var width,height;
 window.onresize = function(){
     width = this.innerWidth;
     height = this.innerHeight;
 
-    if(width < height){
-        smallwidth();
-        //only apply to pages with img
-        if(document.getElementsByClassName('image')[0] !== undefined){
-            smallwidthimg();
-        }
-        if(document.getElementsByName('sosmedlist')[0] !== undefined){
-            sosmedsmall();
-        }
+    if(height>width){
+        mobile()
     }
-    else {
-        bigwidth();
-        //only apply to pages with img
-        if(document.getElementsByClassName('image')[0] !== undefined){
-            bigwidthimg();
-        }
-        if(document.getElementsByName('sosmedlist')[0] !== undefined){
-            sosmedbig();
-        }
+    if(width>height){
+        desktop()
     }
 }
