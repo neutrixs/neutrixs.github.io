@@ -14,6 +14,11 @@ function mobile(){
         }
     }
 
+    navbar = document.getElementsByClassName('navbarmenulist');
+    for(var i=0;i<navbar.length;i++){
+        navbar[i].classList.add('navbarmenulistmobile')
+    }
+
     //sosmed part(remove on other pages)
     document.getElementById('sosmedholder').style.textAlign = 'left';
 }
@@ -31,6 +36,11 @@ function desktop(){
         if(!div[i].classList['value'].includes('shadow') && !div[i].classList['value'].includes('navbar')){
             div[i].classList.remove('divmobile')
         }
+    }
+
+    navbar = document.getElementsByClassName('navbarmenulist');
+    for(var i=0;i<navbar.length;i++){
+        navbar[i].classList.remove('navbarmenulistmobile')
     }
 
     //sosmed part(remove on other pages)

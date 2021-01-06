@@ -57,6 +57,11 @@ a{
 .navbarmenulist:active{
     box-shadow: inset 0.1em 0.1em 0.3em #000000, inset -0.1em -0.1em 0.3em #00ff8a;
 }
+.navbarmenulistmobile{
+    margin-right: 0.1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
 
 .sosmedbutton{
     border-radius: 1em;
