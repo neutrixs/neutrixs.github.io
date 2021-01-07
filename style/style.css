@@ -151,4 +151,6 @@ a{
 .divmobile{
     border-radius: 0;
     box-shadow: none;
+    padding-left: 1em;
+    padding-right: 1em;
 }

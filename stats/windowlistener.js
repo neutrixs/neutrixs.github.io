@@ -9,7 +9,7 @@ function mobile(){
 
     div = document.getElementsByTagName('div');
     for(var i=0;i<div.length;i++){
-        if(!div[i].classList['value'].includes('shadow') && !div[i].classList['value'].includes('navbar')){
+        if(!div[i].classList['value'].includes('shadow') && !div[i].classList['value'].includes('navbar') && !div[i].classList['value'].includes('holder')){
             div[i].classList.add('divmobile')
         }
     }
@@ -30,7 +30,7 @@ function desktop(){
 
     div = document.getElementsByTagName('div');
     for(var i=0;i<div.length;i++){
-        if(!div[i].classList['value'].includes('shadow') && !div[i].classList['value'].includes('navbar')){
+        if(!div[i].classList['value'].includes('shadow') && !div[i].classList['value'].includes('navbar') && !div[i].classList['value'].includes('holder')){
             div[i].classList.remove('divmobile')
         }
     }
