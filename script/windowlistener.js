@@ -1,54 +1,54 @@
 function mobile(){
-    document.getElementById('navbar').classList.add('navbarmobile')
-    document.getElementById('holder').classList.add('holdermobile')
+    $('#navbar').addClass('navbarmobile')
+    $('#holder').addClass('holdermobile')
 
-    border = document.getElementsByClassName('border');
+    border = $('.border');
     for(var i=0;i<border.length;i++){
         border[i].classList.add('bordermobile')
     }
 
-    div = document.getElementsByTagName('div');
+    div = $('div');
     for(var i=0;i<div.length;i++){
         if(!div[i].classList['value'].includes('shadow') && !div[i].classList['value'].includes('navbar') && !div[i].classList['value'].includes('holder')){
             div[i].classList.add('divmobile')
         }
     }
 
-    navbar = document.getElementsByClassName('navbarmenulist');
+    navbar = $('.navbarmenulist');
     for(var i=0;i<navbar.length;i++){
         navbar[i].classList.add('navbarmenulistmobile')
     }
 
     //page specific
-    document.getElementById('sosmedholder').style.textAlign = 'left';
+    $('#sosmedholder').css('text-align','left');
 }
 function desktop(){
-    document.getElementById('navbar').classList.remove('navbarmobile')
-    document.getElementById('holder').classList.remove('holdermobile')
+    $('#navbar').removeClass('navbarmobile')
+    $('#holder').removeClass('holdermobile')
 
-    border = document.getElementsByClassName('border');
+    border = $('.border');
     for(var i=0;i<border.length;i++){
         border[i].classList.remove('bordermobile')
     }
 
-    div = document.getElementsByTagName('div');
+    div = $('div');
     for(var i=0;i<div.length;i++){
         if(!div[i].classList['value'].includes('shadow') && !div[i].classList['value'].includes('navbar') && !div[i].classList['value'].includes('holder')){
             div[i].classList.remove('divmobile')
         }
     }
 
-    navbar = document.getElementsByClassName('navbarmenulist');
+    navbar = $('.navbarmenulist');
     for(var i=0;i<navbar.length;i++){
         navbar[i].classList.remove('navbarmenulistmobile')
     }
 
     //page specific
-    document.getElementById('sosmedholder').style.textAlign = 'center';
+    $('#sosmedholder').css('text-align','center');
 }
 
 
-if(document.documentElement.clientHeight>document.documentElement.clientWidth) mobile();
+if(($(document).height())>($(document).width())) mobile();
 
 var width,height;
 window.onresize = function(){
